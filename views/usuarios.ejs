@@ -1,0 +1,60 @@
+<%- include('partials/header'); %>
+
+<div class="container">
+  <h3>AGREGAR USUARIOS</h3>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <button class="btn btn-success" id="btnAgregar">Agregar</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Correo Electrónico</th>
+            <th>Usuario</th>
+            <th>Registro</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody id="tUsuarios"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          AGREGAR USUARIOS
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/usuarios.js"></script>
+
+<%- include('partials/footer'); %>
